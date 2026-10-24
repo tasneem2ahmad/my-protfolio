@@ -1,0 +1,34 @@
+<header class="top-nav-bar">
+  <a class="brand" href="#hero" (click)="navigate.emit('hero')">Tasneem<span class="brand-dot">.</span></a>
+
+  <nav class="pill-nav">
+    <button type="button" aria-label="Home" [attr.aria-current]="activeTab === 'hero' ? 'page' : null" (click)="navigate.emit('hero')" [class.active]="activeTab === 'hero'">
+      <i class="bi bi-house-door-fill"></i>
+      <span *ngIf="activeTab === 'hero'">Home</span>
+    </button>
+    <button type="button" aria-label="About" [attr.aria-current]="activeTab === 'about' ? 'page' : null" (click)="navigate.emit('about')" [class.active]="activeTab === 'about'">
+      <i class="bi bi-person-fill"></i>
+      <span *ngIf="activeTab === 'about'">About</span>
+    </button>
+    <button type="button" aria-label="Skills" [attr.aria-current]="activeTab === 'skills' ? 'page' : null" (click)="navigate.emit('skills')" [class.active]="activeTab === 'skills'">
+      <i class="bi bi-code-slash"></i>
+      <span *ngIf="activeTab === 'skills'">Skills</span>
+    </button>
+    <button type="button" aria-label="Education" [attr.aria-current]="activeTab === 'education' ? 'page' : null" (click)="navigate.emit('education')" [class.active]="activeTab === 'education'">
+      <i class="bi bi-mortarboard-fill"></i>
+      <span *ngIf="activeTab === 'education'">Education</span>
+    </button>
+    <button type="button" aria-label="Experience" [attr.aria-current]="activeTab === 'experience' ? 'page' : null" (click)="navigate.emit('experience')" [class.active]="activeTab === 'experience'">
+      <i class="bi bi-briefcase-fill"></i>
+      <span *ngIf="activeTab === 'experience'">Experience</span>
+    </button>
+    <button type="button" aria-label="Projects" [attr.aria-current]="activeTab === 'projects' ? 'page' : null" (click)="navigate.emit('projects')" [class.active]="activeTab === 'projects'">
+      <i class="bi bi-laptop-fill"></i>
+      <span *ngIf="activeTab === 'projects'">Projects</span>
+    </button>
+    <button type="button" aria-label="Contact" [attr.aria-current]="activeTab === 'contact' ? 'page' : null" (click)="navigate.emit('contact')" [class.active]="activeTab === 'contact'">
+      <i class="bi bi-envelope-fill"></i>
+      <span *ngIf="activeTab === 'contact'">Contact</span>
+    </button>
+  </nav>
+</header>

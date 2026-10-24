@@ -1,0 +1,15 @@
+<section id="experience" class="content-section">
+  <h2 class="left-section-title">Experience</h2>
+  <div class="timeline-list">
+    <div class="timeline-card" *ngFor="let exp of experiences">
+      <h3 class="card-role">{{ exp.role }}</h3>
+      <span class="card-date">{{ exp.period }}</span>
+      <div class="card-company">{{ exp.company }}</div>
+      <p class="card-desc">{{ exp.description }}</p>
+      <ul class="card-bullets">
+        <li *ngFor="let d of exp.details">{{ d }}</li>
+      </ul>
+      <a *ngIf="exp.certificateUrl" [href]="exp.certificateUrl" target="_blank" rel="noopener noreferrer" class="credential-link">View training certificate <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>

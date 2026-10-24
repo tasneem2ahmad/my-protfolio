@@ -1,27 +1,27 @@
-# MyProtfolio
+# Tasneem Shehata portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+An Angular 17 portfolio. The site has one prerendered page and can be hosted as static files.
 
-## Development server
+## Run locally
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```powershell
+npm install
+npm start
+```
 
-## Code scaffolding
+Open `http://localhost:4200/`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Deploy manually with Netlify Drop
 
-## Build
+1. Run `npm run build` in this project directory.
+2. Open [Netlify Drop](https://app.netlify.com/drop).
+3. Drag the **`dist/my-protfolio/browser`** folder onto the drop zone. The folder itself must contain `index.html`.
+4. Open the resulting `netlify.app` URL and check the résumé link, project links, and contact buttons.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To publish a later change, build again and drag the updated browser folder onto the site's deployment drop zone.
 
-## Running unit tests
+## Deploy from Git later
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Push this project to a Git repository and import it in Netlify. The included `netlify.toml` configures `npm run build` and publishes `dist/my-protfolio/browser`. Each push to the production branch can then trigger a new deployment.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The contact form opens the visitor's email app; it does not use a server. The current CV PDF is included in the public site assets.

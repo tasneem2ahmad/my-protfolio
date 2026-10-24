@@ -1,0 +1,33 @@
+<section id="hero" class="hero-section">
+  <div class="hero-left">
+    <div class="eyebrow"><span class="status-dot"></span> FULL STACK .NET &amp; ANGULAR <span class="eyebrow-line"></span> CAIRO, EGYPT</div>
+    <p class="hero-kicker">Hello, I'm Tasneem</p>
+    <h1 class="hero-greeting">Building software<br>that <span class="cyan-text">moves business forward.</span></h1>
+    <h2 class="hero-role">
+      And I'm a <span class="cyan-text">{{ displayedRole }}</span><span class="cursor">|</span>
+    </h2>
+    <p class="hero-desc">
+      I build financial, ERP, and supply chain software. My work spans Egyptian Tax Authority integrations,
+      double-entry accounting, high-volume data processing, and secure ASP.NET Core APIs with Angular interfaces.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#projects" (click)="navigate.emit('projects')" class="btn-cyan">Explore my work <i class="bi bi-arrow-up-right"></i></a>
+      <a href="assets/Tasneem-Shehata-CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-outline">View résumé <i class="bi bi-arrow-up-right"></i></a>
+    </div>
+
+    <div class="social-row">
+      <a href="https://www.linkedin.com/in/tasneem-she7ata-7943b1310" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="social-icon"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/tasneem2ahmad" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="social-icon"><i class="bi bi-github"></i></a>
+      <a [href]="'mailto:' + profile.email" aria-label="Send email" class="social-icon"><i class="bi bi-envelope"></i></a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-visual" aria-label="Tasneem's development stack">
+      <div class="visual-top"><span class="visual-dots"><i></i><i></i><i></i></span><span>PORTFOLIO / 2026</span></div>
+      <div class="visual-orbit"><span class="orbit-center">T<span>.</span></span><span class="orbit-label orbit-label-one">.NET CORE</span><span class="orbit-label orbit-label-two">ANGULAR</span><span class="orbit-label orbit-label-three">SQL SERVER</span></div>
+      <div class="visual-bottom"><span><span class="status-dot"></span> BUILDING ENTERPRISE SYSTEMS</span><span>FINANCE / ERP</span></div>
+    </div>
+  </div>
+</section>

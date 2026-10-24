@@ -1,0 +1,25 @@
+<div class="portfolio-shell">
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <app-portfolio-header [activeTab]="activeTab" (navigate)="scrollToSection($event)" />
+
+  <main class="page-body">
+    <app-portfolio-hero (navigate)="scrollToSection($event)" />
+    <app-portfolio-about />
+    <app-portfolio-skills />
+    <app-portfolio-education />
+    <app-portfolio-experience />
+    <app-portfolio-projects />
+    <app-portfolio-contact />
+  </main>
+
+  <button type="button" class="back-to-top" aria-label="Back to top" title="Back to top" (click)="scrollToTop()">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+  <footer class="site-footer">
+    <span>© 2026 Tasneem Shehata</span>
+    <span>Designed &amp; built with care.</span>
+    <a href="#hero" (click)="scrollToSection('hero')">Back to top ↑</a>
+  </footer>
+</div>

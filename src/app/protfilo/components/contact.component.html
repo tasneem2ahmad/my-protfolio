@@ -1,0 +1,26 @@
+<section id="contact" class="content-section">
+  <div class="contact-split">
+    <div class="contact-direct">
+      <h2 class="direct-heading">Let's work together</h2>
+      <p class="direct-sub">Have a project or opportunity in mind? I’d love to hear about it.</p>
+      <div class="direct-buttons">
+        <a href="https://wa.me/201062614879" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+          <i class="bi bi-whatsapp"></i> WhatsApp
+        </a>
+        <a [href]="'tel:' + profile.phone" class="btn-call">
+          <i class="bi bi-telephone-fill"></i> Call Me
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-form-box">
+      <h3>Send a message</h3>
+      <p class="form-note">This opens your email app with your message ready to send.</p>
+      <form (ngSubmit)="submitContact()">
+        <label for="contact-email">Your email</label><input id="contact-email" type="email" [(ngModel)]="contactForm.email" name="email" placeholder="you@example.com" required />
+        <label for="contact-message">Your message</label><textarea id="contact-message" [(ngModel)]="contactForm.message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+        <button type="submit" class="btn-submit">Open email app <i class="bi bi-arrow-up-right"></i></button>
+      </form>
+    </div>
+  </div>
+</section>

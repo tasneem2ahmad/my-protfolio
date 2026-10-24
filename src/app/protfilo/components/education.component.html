@@ -1,0 +1,12 @@
+<section id="education" class="content-section">
+  <h2 class="left-section-title">Education</h2>
+  <div class="timeline-list">
+    <div class="timeline-card" *ngFor="let edu of educationList">
+      <h3 class="card-role">{{ edu.degree }}</h3>
+      <span class="card-date">{{ edu.period }}</span>
+      <div class="card-company">{{ edu.institution }}</div>
+      <p class="card-desc">{{ edu.details }}</p>
+      <a *ngIf="edu.certificateUrl" [href]="edu.certificateUrl" target="_blank" rel="noopener noreferrer" class="credential-link">View degree certificate <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>

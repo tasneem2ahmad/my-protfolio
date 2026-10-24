@@ -1,0 +1,21 @@
+<section id="projects" class="content-section">
+  <div class="projects-bar">
+    <div><span class="section-index">04 / SELECTED WORK</span><h2 class="centered-title">Featured projects<span class="cyan-text">.</span></h2></div>
+    <div class="search-box">
+      <input type="search" [(ngModel)]="searchQuery" aria-label="Search projects" placeholder="Search projects..." />
+      <i class="bi bi-search"></i>
+    </div>
+  </div>
+
+  <div class="project-filters" aria-label="Filter projects">
+    <button type="button" *ngFor="let category of categories" (click)="selectedCategory = category" [class.active]="selectedCategory === category" [attr.aria-pressed]="selectedCategory === category">{{ category }}</button>
+  </div>
+  <div class="projects-matrix">
+    <article class="project-card" *ngFor="let p of filteredProjects">
+      <div class="project-visual"><span class="project-number">{{ p.number }} / 04</span><i class="bi {{ p.icon }}" aria-hidden="true"></i><span class="project-visual-word">{{ p.category }}</span></div>
+      <div class="project-content"><span class="project-category">{{ p.category }}</span><h3>{{ p.name }}</h3><p>{{ p.description }}</p><div class="project-tech"><span *ngFor="let technology of p.technologies">{{ technology }}</span></div><div class="project-links"><a *ngIf="p.githubUrl" [href]="p.githubUrl" target="_blank" rel="noopener noreferrer">GitHub <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a><a *ngIf="p.docsUrl" [href]="p.docsUrl" target="_blank" rel="noopener noreferrer">API docs <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div></div>
+    </article>
+  </div>
+  <p class="empty-projects" *ngIf="filteredProjects.length === 0">No projects match your search. Try another term.</p>
+  <a class="all-work-link" href="https://github.com/tasneem2ahmad" target="_blank" rel="noopener noreferrer">Explore my GitHub <i class="bi bi-arrow-up-right"></i></a>
+</section>
