@@ -40,17 +40,17 @@ export const profile = {
 };
 
 export const stats = [
-  { value: '10K+', label: 'Tax documents per month' },
-  { value: '20K+', label: 'Journal records per batch' },
-  { value: '35%', label: 'Faster report generation' },
-  { value: '100+', label: 'User roles supported' }
+  { value: 'CRM', label: 'Customer workflows & support' },
+  { value: 'ERP', label: 'Finance, HR & operations' },
+  { value: 'AR / EN', label: 'Bilingual user interfaces' },
+  { value: 'API', label: 'Permissions & automated tests' }
 ];
 
 export const skillGroups: SkillGroup[] = [
-  { title: 'Backend & APIs', icon: 'bi-braces', items: ['C#', 'ASP.NET Core Web API', 'ASP.NET Core MVC', 'Entity Framework Core', 'LINQ', 'RESTful APIs'] },
-  { title: 'Frontend', icon: 'bi-window', items: ['Angular (v14+)', 'TypeScript', 'JavaScript', 'RxJS', 'DevExpress', 'HTML5 / CSS3', 'Bootstrap'] },
-  { title: 'Data & tools', icon: 'bi-database', items: ['SQL Server', 'ClosedXML', 'EPPlus', 'Postman', 'Swagger / OpenAPI', 'Git & GitHub', 'Python'] },
-  { title: 'Engineering', icon: 'bi-diagram-3', items: ['Clean Architecture', 'SOLID', 'Dependency Injection', 'RBAC', 'ACID Transactions', 'Repository Pattern', 'OOP'] }
+  { title: 'Backend & APIs', icon: 'bi-braces', items: ['C#', 'ASP.NET Core Web API', 'ASP.NET Core MVC', 'Entity Framework Core', 'LINQ', 'RESTful APIs', 'Windows Forms'] },
+  { title: 'Frontend', icon: 'bi-window', items: ['Angular', 'TypeScript', 'JavaScript', 'RxJS', 'DevExtreme', 'HTML5 / CSS3', 'Bootstrap', 'Angular CLI'] },
+  { title: 'Data & tools', icon: 'bi-database', items: ['SQL Server', 'DevExpress Reporting', 'ClosedXML', 'Postman', 'Swagger / OpenAPI', 'Git & GitHub', 'Python'] },
+  { title: 'Engineering', icon: 'bi-diagram-3', items: ['Layered Architecture', 'Dependency Injection', 'Repository Pattern', 'Role-Based Access Control', 'Automated Testing', 'REST APIs'] }
 ];
 
 export const educationList: Education[] = [
@@ -68,13 +68,15 @@ export const experiences: Experience[] = [
     role: 'Full Stack Developer (.NET & Angular)',
     company: 'Pioneers Solutions — Cairo, Egypt',
     period: 'Oct 2023 – Present',
-    description: 'Building financial, supply chain, manufacturing, and healthcare ERP solutions with ASP.NET Core, Angular, EF Core, and SQL Server.',
+    description: 'Developing ERP features across CRM, accounting, HR, healthcare, sales, inventory, and production with ASP.NET Core, EF Core, SQL Server, Angular, and DevExtreme.',
     details: [
-      'Integrated ETA e-Invoicing and e-Receipt APIs, including document validation, error recovery, and status synchronization for 10,000+ monthly documents.',
-      'Built a double-entry general ledger engine for sales, purchases, insurance claims, and returns with transactional consistency.',
-      'Developed asynchronous Excel pipelines with EPPlus and ClosedXML to validate 20,000+ journal records per batch before database commits.',
-      'Delivered inventory, warehouse, production-line, and healthcare billing workflows through backend services and Angular interfaces.',
-      'Implemented hierarchical role-based access across 100+ user roles and optimized reporting latency by 35%.'
+      'Built CRM APIs, EF Core models, SQL upgrade scripts, and Angular screens for leads, Customer 360, activities, opportunities, custom fields, dashboards, notifications, and support tickets with working-hours SLA calculations.',
+      'Extended journal entries, cost centers, cheques, receipts, payment methods, due dates, and financial reports across backend services and Angular screens.',
+      'Improved sales documents, returns, store transfers, production line job orders, and their validation and user interfaces.',
+      'Contributed to Egyptian Tax Authority e-Invoicing and e-Receipt workflows across backend services and Angular screens.',
+      'Worked on patient documents, admissions, insurance policies, clinical reports, employee workflows, payroll screens, and approval processes.',
+      'Enhanced dynamic report definitions, filters, SQL-backed reports, statements, and the Angular report viewer with Arabic and English presentation.',
+      'Added API permission actions, branch-aware access checks, user-facing validation, and automated tests for new CRM workflows.'
     ]
   },
   {
@@ -102,9 +104,9 @@ export const experiences: Experience[] = [
 ];
 
 export const projects: Project[] = [
-  { name: 'Enterprise E-Commerce Platform', category: 'Full Stack', description: 'MVC storefront and secure REST APIs for catalog, stock reservations, checkout, and transaction verification, with 25+ documented endpoints.', technologies: ['ASP.NET Core MVC', 'Web API', 'EF Core', 'SQL Server', 'JWT'], githubUrl: 'https://github.com/tasneem2ahmad/PioneersStore', docsUrl: 'https://www.postman.com/joint-operations-technologist-15153356/workspace/my-workspace/collection/31032075-adb16389-84ea-451f-b470-9b0d17655f44?action=share&creator=31032075', icon: 'bi-bag', number: '01' },
+  { name: 'E-Commerce Store (ASP.NET MVC)', category: 'Full Stack', description: 'ASP.NET MVC store with catalog, inventory, and order workflows, organized into presentation, business-logic, and data-access projects with published source code and API examples.', technologies: ['C#', 'ASP.NET MVC', 'SQL Server', 'Postman', 'Git'], githubUrl: 'https://github.com/tasneem2ahmad/PioneersStore', docsUrl: 'https://www.postman.com/joint-operations-technologist-15153356/workspace/my-workspace/collection/31032075-adb16389-84ea-451f-b470-9b0d17655f44?action=share&creator=31032075', icon: 'bi-bag', number: '01' },
   { name: 'Educational Management System', category: 'Full Stack', description: 'Institutional portal for students, faculty, courses, grades, and enrollment with role-based access and validation.', technologies: ['C#', 'ASP.NET Core MVC', 'EF Core', 'SQL Server'], githubUrl: 'https://github.com/tasneem2ahmad/TrainingStudent', icon: 'bi-mortarboard', number: '02' },
   { name: 'HR Management System', category: 'Full Stack', description: 'HR administration for payroll, leave, attendance, and shifts, including rules for overtime and deductions.', technologies: ['C#', 'ASP.NET MVC', 'Entity Framework', 'SQL Server'], icon: 'bi-people', number: '03' },
-  { name: 'Lung Cancer Detection System', category: 'AI', description: 'Graduation project using CNNs and chest X-ray data to classify pulmonary lesions, reaching 92% validation accuracy.', technologies: ['Python', 'CNN', 'Computer Vision', 'OpenCV'], icon: 'bi-cpu', number: '04' }
+  { name: 'Lung Cancer Detection System', category: 'AI', description: 'Graduation research project training CNNs on chest X-ray images, with image preprocessing, augmentation pipelines, and feature map visualizations using OpenCV and Python.', technologies: ['Python', 'CNN', 'Computer Vision', 'OpenCV'], icon: 'bi-cpu', number: '04' }
 ];
 
