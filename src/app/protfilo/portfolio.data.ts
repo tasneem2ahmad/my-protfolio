@@ -67,7 +67,7 @@ export const experiences: Experience[] = [
   {
     role: 'Full Stack Developer (.NET & Angular)',
     company: 'Pioneers Solutions — Cairo, Egypt',
-    period: 'Oct 2023 – Present',
+    period: 'October 2024 – Present',
     description: 'Developing ERP features across CRM, accounting, HR, healthcare, sales, inventory, and production with ASP.NET Core, EF Core, SQL Server, Angular, and DevExtreme.',
     details: [
       'Built CRM APIs, EF Core models, SQL upgrade scripts, and Angular screens for leads, Customer 360, activities, opportunities, custom fields, dashboards, notifications, and support tickets with working-hours SLA calculations.',
