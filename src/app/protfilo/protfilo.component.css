@@ -730,7 +730,7 @@
 .project-content p { min-height: 5.7em; }
 .project-tech { margin: 1.3rem 0; }
 .project-tech span { font-size: .7rem; padding: .35rem .5rem; }
-.project-links { display: flex; gap: 1.2rem; min-height: 1.4rem; }
+.project-links { display: flex; flex-wrap: wrap; gap: .65rem 1.2rem; min-height: 1.4rem; }
 .project-links a { color: #9de4e4; font-size: .83rem; text-decoration: none; border-bottom: 1px solid #5bafb5; padding-bottom: .2rem; }
 .empty-projects { padding: 2rem 0; }
 .all-work-link { margin-top: 2rem; display: inline-flex; gap: .6rem; align-items: center; color: #9de4e4; text-decoration: none; border-bottom: 1px solid #9de4e4; padding-bottom: .35rem; }

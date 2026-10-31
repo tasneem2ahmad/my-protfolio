@@ -22,6 +22,9 @@ export interface Project {
   technologies: string[];
   githubUrl?: string;
   docsUrl?: string;
+  demoUrl?: string;
+  textVideoUrl?: string;
+  pdfVideoUrl?: string;
   icon: string;
   number: string;
 }
@@ -104,9 +107,10 @@ export const experiences: Experience[] = [
 ];
 
 export const projects: Project[] = [
-  { name: 'E-Commerce Store (ASP.NET MVC)', category: 'Full Stack', description: 'ASP.NET MVC store with catalog, inventory, and order workflows, organized into presentation, business-logic, and data-access projects with published source code and API examples.', technologies: ['C#', 'ASP.NET MVC', 'SQL Server', 'Postman', 'Git'], githubUrl: 'https://github.com/tasneem2ahmad/PioneersStore', docsUrl: 'https://www.postman.com/joint-operations-technologist-15153356/workspace/my-workspace/collection/31032075-adb16389-84ea-451f-b470-9b0d17655f44?action=share&creator=31032075', icon: 'bi-bag', number: '01' },
-  { name: 'Educational Management System', category: 'Full Stack', description: 'Institutional portal for students, faculty, courses, grades, and enrollment with role-based access and validation.', technologies: ['C#', 'ASP.NET Core MVC', 'EF Core', 'SQL Server'], githubUrl: 'https://github.com/tasneem2ahmad/TrainingStudent', icon: 'bi-mortarboard', number: '02' },
-  { name: 'HR Management System', category: 'Full Stack', description: 'HR administration for payroll, leave, attendance, and shifts, including rules for overtime and deductions.', technologies: ['C#', 'ASP.NET MVC', 'Entity Framework', 'SQL Server'], icon: 'bi-people', number: '03' },
-  { name: 'Lung Cancer Detection System', category: 'AI', description: 'Graduation research project training CNNs on chest X-ray images, with image preprocessing, augmentation pipelines, and feature map visualizations using OpenCV and Python.', technologies: ['Python', 'CNN', 'Computer Vision', 'OpenCV'], icon: 'bi-cpu', number: '04' }
+  { name: 'StudyMate — AI Study Assistant', category: 'AI', description: 'Built an Angular and ASP.NET Core app that turns lecture text or PDFs into study briefs and multiple-choice quizzes with Gemini. The public demo uses saved AI results, so visitors can explore it without an API key.', technologies: ['Angular', 'TypeScript', 'ASP.NET Core', 'Gemini API', 'PDF Upload', 'Docker'], demoUrl: 'https://studymate-cv-demo-2026.icy-lemon-1083.chatgpt.site', textVideoUrl: 'https://studymate-cv-demo-2026.icy-lemon-1083.chatgpt.site/assets/demo/StudyMate_Wolf_Text_Demo.webm', pdfVideoUrl: 'https://studymate-cv-demo-2026.icy-lemon-1083.chatgpt.site/assets/demo/StudyMate_Snakes_PDF_Demo.webm', icon: 'bi-stars', number: '01' },
+  { name: 'E-Commerce Store (ASP.NET MVC)', category: 'Full Stack', description: 'ASP.NET MVC store with catalog, inventory, and order workflows, organized into presentation, business-logic, and data-access projects with published source code and API examples.', technologies: ['C#', 'ASP.NET MVC', 'SQL Server', 'Postman', 'Git'], githubUrl: 'https://github.com/tasneem2ahmad/PioneersStore', docsUrl: 'https://www.postman.com/joint-operations-technologist-15153356/workspace/my-workspace/collection/31032075-adb16389-84ea-451f-b470-9b0d17655f44?action=share&creator=31032075', icon: 'bi-bag', number: '02' },
+  { name: 'Educational Management System', category: 'Full Stack', description: 'Institutional portal for students, faculty, courses, grades, and enrollment with role-based access and validation.', technologies: ['C#', 'ASP.NET Core MVC', 'EF Core', 'SQL Server'], githubUrl: 'https://github.com/tasneem2ahmad/TrainingStudent', icon: 'bi-mortarboard', number: '03' },
+  { name: 'HR Management System', category: 'Full Stack', description: 'HR administration for payroll, leave, attendance, and shifts, including rules for overtime and deductions.', technologies: ['C#', 'ASP.NET MVC', 'Entity Framework', 'SQL Server'], icon: 'bi-people', number: '04' },
+  { name: 'Lung Cancer Detection System', category: 'AI', description: 'Graduation research project training CNNs on chest X-ray images, with image preprocessing, augmentation pipelines, and feature map visualizations using OpenCV and Python.', technologies: ['Python', 'CNN', 'Computer Vision', 'OpenCV'], icon: 'bi-cpu', number: '05' }
 ];
 
